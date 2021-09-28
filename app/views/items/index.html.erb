@@ -1,0 +1,17 @@
+<div class="row">
+	
+	<% @items.each do |item| %>
+		<div class="card" style="width:16rem;">
+		  <%= image_tag item.image, height: 250 %>
+		  <div class="card-body">
+			    <h5 class="card-title"><%= item.itemname %></h5>
+			    <p class="card-desc"><%= item.desc %></p>
+		  </div>
+		  <%= link_to "View Item", item_path(item), class: "btn btn-primary" %>
+		  
+		</div>
+	<% end %>
+
+	<div class="col-sm-6">
+		</div>
+</div>		

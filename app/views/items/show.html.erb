@@ -1,0 +1,23 @@
+
+
+<div class="card" style="width: 18rem;">
+	
+ 
+  <%= image_tag @item.image, height: 250 %>
+  <div class="card-body">
+    <h5 class="card-title"><%= @item.itemname %></h5>
+
+    <p class="card-desc"><%= @item.desc %></p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Price <%= @item.stock.price %></li>
+    <li class="list-group-item">Quantity <%= @item.stock.quantity %></li>
+    <li class="list-group-item">Owned By <%= link_to @item.user.email %></li>
+  </ul>
+
+ 
+</div>
+
+
+
+ 
